@@ -1,6 +1,6 @@
 # queryjevko.js
 
-Functions to translate between JavaScript Interoperable Dynamic Values (IDVs) and Query String Jevko -- a Jevko-based format which can encode them in URL query strings. This allows exchanging complex values via query strings in a compact, minimal, and predictable way.
+Functions to translate between JavaScript Interoperable Dynamic Values (IDVs) and Query String Jevko -- a Jevko-based format which is designed be both human readable and to fit into URL query strings without escaping. This allows exchanging complex values via query strings in a compact, readable, minimal, and predictable way.
 
 An IDV is a JavaScript value which is either:
 
