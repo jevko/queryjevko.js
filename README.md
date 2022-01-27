@@ -47,7 +47,12 @@ console.log(jsToJevko(map) === str)
 `parseJevko` takes a string which must conform to the following ABNF grammar:
 
 ```abnf
-Jevko = *("(" Jevko ")" / "~" ("~"/"("/")") / %x0-5a/%x5c/%x5e-5f/%x61-10ffff)
+Jevko = *(
+  "(" Jevko ")" / 
+  "~" ("~" / "(" / ")") / 
+  %x0-5a / %x5c / %x5e-5f / 
+  %x61-10ffff
+)
 ```
 
 and returns a parse tree for it.
