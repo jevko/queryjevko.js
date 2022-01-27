@@ -61,7 +61,7 @@ and returns a parse tree for it.
 
 `jevkoToJs` translates the result of `parseJevko` into IDVs.
 
-For example `jevkoToJs` will translate the result of parsing this:
+For example it will translate the result of parsing this:
 
 ```
 include(author)fields(articles((title)(body))people((name)))
@@ -101,7 +101,7 @@ The following piece of example data used here:
 include(author)fields(articles((title)(body))people((name)))
 ```
 
-is based on (an example from the JSON API spec)[https://jsonapi.org/format/#fetching-sparse-fieldsets].
+is based on [an example from the JSON API spec](https://jsonapi.org/format/#fetching-sparse-fieldsets).
 
 ***
 
