@@ -27,7 +27,7 @@ import {parseJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.j@v0.1.0/
 ## Quickstart
 
 ```js
-import {parseJevko, jevkoToJs, jsToJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.j@v0.1.0/mod.js'
+import {parseJevko, jevkoToJs, jsToJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.js@v0.1.0/mod.js'
 
 const str = `include(author)fields(articles((title)(body))people((name)))`
 const map = jevkoToJs(parseJevko(str))
