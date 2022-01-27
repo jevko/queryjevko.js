@@ -107,5 +107,5 @@ is based on [an example from the JSON API spec](https://jsonapi.org/format/#fetc
 
 [MIT License](LICENSE)
 
-© 2022 [xtao.org](https://xtao.org)
+© 2022 [Jevko.org](https://jevko.org)
 
