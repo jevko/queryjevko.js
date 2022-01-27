@@ -2,11 +2,11 @@ export const jsToJevko = (value, {
   open = '(',
   close = ')',
   escape = '~'
-}) => {
+} = {}) => {
   let ret = ''
   if (typeof value === 'string') {
     for (const c of value) {
-      if (c === open || c === close || c === escpe) ret += escape
+      if (c === open || c === close || c === escape) ret += escape
       ret += c
     }
   }

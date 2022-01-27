@@ -8,6 +8,40 @@ An IDV is a JavaScript value which is either:
 * a nonempty `Array` of IDV
 * a nonempty `Map` from `string` to IDV
 
+## Installation
+
+### Node.js
+
+```
+npm install jevko/queryjevko.js#semver:0.1.0
+```
+
+### Deno and the browser
+
+Import from [jsDelivr](https://www.jsdelivr.com/):
+
+```js
+import {parseJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.j@v0.1.0/mod.js'
+```
+
+## Quickstart
+
+```js
+import {parseJevko, jevkoToJs, jsToJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.j@v0.1.0/mod.js'
+
+const str = `include(author)fields(articles((title)(body))people((name)))`
+const map = jevkoToJs(parseJevko(str))
+
+console.log(map) 
+// Map(2) {
+//   'include' => 'author',
+//   'fields' => Map(2) { 'articles' => [ 'title', 'body' ], 'people' => [ 'name' ] }
+// }
+
+console.log(jsToJevko(map) === str) 
+// true
+```
+
 ## parseJevko
 
 `parseJevko` takes a string which must conform to the following ABNF grammar:
@@ -53,6 +87,16 @@ into this:
 ```
 include(author)fields(articles((title)(body))people((name)))
 ```
+
+## Attribution
+
+The following piece of example data used here:
+
+```
+include(author)fields(articles((title)(body))people((name)))
+```
+
+is based on (an example from the JSON API spec)[https://jsonapi.org/format/#fetching-sparse-fieldsets].
 
 ***
 
