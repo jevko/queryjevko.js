@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "main": "mod.js",
   "private": true,
-  "devDependencies": {},
   "scripts": {
     "test": "node test.js"
   },
