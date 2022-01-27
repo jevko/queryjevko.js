@@ -6,7 +6,7 @@ An IDV is a JavaScript value which is either:
 
 * a `string`
 * a nonempty `Array` of IDV
-* a nonempty `Map` from `string` to IDV
+* a nonempty `Map` from nonempty `string` to IDV
 
 ## Installation
 
