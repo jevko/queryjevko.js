@@ -21,7 +21,7 @@ npm install jevko/queryjevko.js#semver:0.1.0
 Import from [jsDelivr](https://www.jsdelivr.com/):
 
 ```js
-import {parseJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.j@v0.1.0/mod.js'
+import {parseJevko} from 'https://cdn.jsdelivr.net/gh/jevko/queryjevko.js@v0.1.0/mod.js'
 ```
 
 ## Quickstart
